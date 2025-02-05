@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Colaborativo (Emulador)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Sistema de Perfiles (Modo Emulador)</h1>
+        </div>
+        
+        <div id="profile-form">
+            <h2>Crear Perfil</h2>
+            <input type="text" id="name" placeholder="Nombre">
+            <input type="email" id="email" placeholder="Email">
+            <button onclick="createProfile()">Crear</button>
+        </div>
+
+        <div id="image-upload" style="display: none;">
+            <h2>Subir Imagen</h2>
+            <input type="file" id="image" accept="image/*">
+            <button onclick="uploadImage()">Subir</button>
+        </div>
+
+        <div id="profile-display" style="display: none;">
+            <img id="profile-image" src="" alt="Perfil">
+            <h3 id="profile-name"></h3>
+            <p id="profile-email"></p>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
